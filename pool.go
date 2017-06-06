@@ -1,14 +1,8 @@
 package gopool
 
-import (
-	"errors"
-	"fmt"
-	"runtime"
-	"sync"
-	"time"
-)
+import "errors"
 
-// Pool provides generic interface for custom pool 
+// Pool provides generic interface for custom pool
 type Pool interface {
 	Get() interface{}
 	Put(interface{})
